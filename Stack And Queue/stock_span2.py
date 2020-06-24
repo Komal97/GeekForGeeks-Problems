@@ -14,26 +14,28 @@ Output:
 1 1 1 2 1 4 6
 1 1 2 4 5 1
 '''
+
 # keep stack of index
-# pop out index until we get less elements than current and then get total days by subtracting index of currect element and top element
-# if top element is greater, we push element
-# intuition is, if top is less, then element less than that is popped out 
+# find nearest greater element to left and subtract its index from index of currect index, in between consecutive smaller elements are covered 
+
 def stock_span(arr, n):
     if n == 1:
         print(1)
         return 
     
-    stack = [-1]
+    stack = []
+    ans = []
     for i in range(n):
-        if stack[-1] == -1 or arr[stack[-1]] > arr[i]:
-            stack.append(i)
-            print(1, end = ' ')
+        while len(stack) > 0 and arr[stack[-1]] <= arr[i]:
+            stack.pop()
+        if len(stack) == 0:
+            ans.append(-1)
         else:
-            while stack[-1] != -1 and arr[stack[-1]] <= arr[i]:
-                stack.pop()
-            print(i-stack[-1], end = ' ')
-            stack.append(i)
-            
+            ans.append(stack[-1])
+        stack.append(i)
+    for i in range(n):
+        ans[i] = i-ans[i]
+    print(*ans, sep = ' ')
 
 if __name__ == '__main__':
     t = int(input())
@@ -41,5 +43,4 @@ if __name__ == '__main__':
         n = int(input())
         arr = list(map(int, input().split()))
         stock_span(arr, n)
-        print()
         t -= 1

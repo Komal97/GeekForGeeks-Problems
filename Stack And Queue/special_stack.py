@@ -17,15 +17,16 @@ min_stack = []
 def push(arr, ele):
     global min_stack
     arr.append(ele)
-    x = min(min_stack[-1], ele) if len(min_stack)>0 else ele
-    min_stack.append(x)
-
+    if len(min_stack) == 0 or min_stack[-1] >= ele:
+        min_stack.append(ele)
+    
 def pop(arr):
     if isEmpty(arr):
         return
     global min_stack
-    arr.pop()
-    min_stack.pop()
+    x = arr.pop()
+    if min_stack[-1] == x:
+        min_stack.pop()
 
 def isFull(n, arr):
     return len(arr) == n
@@ -35,4 +36,6 @@ def isEmpty(arr):
 
 def getMin(n, arr):
     global min_stack
-    return min_stack[-1] if not isEmpty(arr) else -1
+    x = min_stack[-1] if len(min_stack) != 0 else -1
+    min_stack = []
+    return x
