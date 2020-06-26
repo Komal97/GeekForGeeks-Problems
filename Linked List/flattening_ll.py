@@ -1,4 +1,5 @@
 '''
+https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1
 Given a Linked List of size N, where every node represents a linked list and contains two pointers of its type:
 (i) a next pointer to the next node,
 (ii) a bottom pointer to a linked list where this node is head.

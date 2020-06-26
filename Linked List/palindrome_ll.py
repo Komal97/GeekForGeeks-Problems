@@ -54,7 +54,7 @@ def isPalindrome(head):
         b = b.next
     return 1
 
-# recursive -> check first and last node, and keep first node as by reference so that accesible throughout recursion and access last node acc to recursion
+# method -2 recursive -> check first and last node, and keep first node as by reference so that accesible throughout recursion and access last node acc to recursion
 '''
 bool check(Node **left, Node*right){
     if(right == NULL){

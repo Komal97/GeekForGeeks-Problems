@@ -1,0 +1,12 @@
+Stack
+https://practice.geeksforgeeks.org/problems/decode-the-string/0
+
+Queue
+easy 
+https://practice.geeksforgeeks.org/problems/chinky-and-diamonds/0
+
+medium
+https://practice.geeksforgeeks.org/problems/lru-cache/1
+https://practice.geeksforgeeks.org/problems/card-rotation/0
+
+

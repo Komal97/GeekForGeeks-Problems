@@ -42,3 +42,31 @@ def getId(m,n): # m is 2-D matrix
             
     return pos if count == 1 else -1
 
+# method -2, O(n)
+def getId(m,n):
+    
+    stack = []
+    # push all candidates in stack
+    for i in range(n):
+        stack.append(i)
+    
+    while len(stack) >= 2:
+        i = stack.pop()
+        j = stack.pop()
+        if m[i][j] == 1:
+            # means i knows j -> i can't be celebrity
+            stack.append(j)
+        else:
+            # means i doesn't know j -> j can't be celebrity
+            stack.append(i)
+            
+    # at last, we have 1 potential candidate left in stack
+    potential = stack.pop()
+    # check potential candidate's column and row
+    for i in range(n):
+        if i!=potential:
+            if m[i][potential] == 0 or m[potential][i] == 1:
+                return -1
+            
+    return potential
+

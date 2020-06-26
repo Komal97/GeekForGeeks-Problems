@@ -1,4 +1,5 @@
 /*
+https://practice.geeksforgeeks.org/problems/rotate-doubly-linked-list-by-p-nodes/1
 Given a doubly linked list, rotate the linked list counter-clockwise by P nodes. 
 Here P is a given positive integer and is smaller than the count of nodes(N) in a linked list.Input:
 1
@@ -9,7 +10,7 @@ Output:
 3 4 5 6 1 2
 */
 
-// keep 2 pointers, 1 at first and 2 is head in second half, then move first half to second half
+//  
 struct node*update(struct node*start,int p)
 {
     //Add your code here
