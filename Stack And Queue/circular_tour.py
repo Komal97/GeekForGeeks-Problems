@@ -17,7 +17,7 @@ Testcase 1: there are 4 petrol pumps with amount of petrol and distance to next 
 '''
 
 
-
+# method - 1 (using queue)
 def tour(lis, n):
     '''
     lis[][0]:Petrol
@@ -48,3 +48,26 @@ def tour(lis, n):
         end = (end+1)%n
         
     return start
+
+# method - 2
+def tour(lis, n):
+    
+    surplus = 0 # keep track of surplus left petrol
+    deficit = 0 # keep track of deficit petrol
+    pos = -1
+    for i in range(n):
+        surplus += lis[i][0] - lis[i][1]
+        # if at some point, surplus becomes -ve, we add this value to deficit to keep track of petrol 
+        # required to cover area that we have covered so far
+        # make surplus as 0 because we are not able to travel with the provided petrol
+        if surplus < 0:
+            deficit += surplus
+            surplus = 0
+            pos = -1
+        else:
+            if pos == -1:
+                pos = i
+    # if we reach the end, we have surplus petrol and deficit contains value of petrol required to cover before pos
+    # by adding we are finding out value of whole tour
+    balance = surplus + deficit
+    return pos if balance >=0 else -1
