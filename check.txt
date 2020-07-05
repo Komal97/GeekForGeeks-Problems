@@ -4,16 +4,15 @@ https://practice.geeksforgeeks.org/problems/print-diagonally/0
 
 linked list
 https://practice.geeksforgeeks.org/problems/quick-sort-on-linked-list/1
-https://practice.geeksforgeeks.org/problems/merge-sort-on-doubly-linked-list/1
 
 Stack
-medium
+easy
 https://practice.geeksforgeeks.org/problems/decode-the-string/0
 
 medium
 https://practice.geeksforgeeks.org/problems/lru-cache/1      --------->    https://ide.codingblocks.com/s/258491
 
-
 Dry run
-https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 https://practice.geeksforgeeks.org/problems/maximum-of-minimum-for-every-window-size/0
+
+
