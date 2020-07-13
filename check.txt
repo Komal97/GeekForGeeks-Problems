@@ -1,18 +1,34 @@
-matrix
-medium 
+String - easy
+https://practice.geeksforgeeks.org/problems/minimum-indexed-character-1587115620/1
+
+matrix - medium 
 https://practice.geeksforgeeks.org/problems/print-diagonally/0
 
 linked list
 https://practice.geeksforgeeks.org/problems/quick-sort-on-linked-list/1
-
-Stack
-easy
-https://practice.geeksforgeeks.org/problems/decode-the-string/0
-
-medium
 https://practice.geeksforgeeks.org/problems/lru-cache/1      --------->    https://ide.codingblocks.com/s/258491
 
-Dry run
-https://practice.geeksforgeeks.org/problems/maximum-of-minimum-for-every-window-size/0
+Stack - easy
+https://practice.geeksforgeeks.org/problems/decode-the-string/0
+
+https://ide.codingblocks.com/s/282621
+
+Tree
+medium - 2
+https://practice.geeksforgeeks.org/problems/check-if-subtree/1
+https://practice.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1
+
+easy - 3
+https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1
+https://practice.geeksforgeeks.org/problems/sum-tree/1
+https://practice.geeksforgeeks.org/problems/diagonal-sum-in-binary-tree/1
+
+Leetcode
+https://www.youtube.com/watch?v=vssbwPkarPQ
+https://leetcode.com/problems/flatten-binary-tree-to-linked-list/discuss/443148/C%2B%2B-solution-with-few-lines(93-100)
+https://www.geeksforgeeks.org/morris-traversal-for-preorder/
+https://www.educative.io/edpresso/what-is-morris-traversal?affiliate_id=5082902844932096&utm_source=google&utm_medium=cpc&utm_campaign=platform2&utm_content=ad-1-dynamic&gclid=Cj0KCQjw6ar4BRDnARIsAITGzlDHIlGKhCXVXLkQjcogSZe9-YJvDYuQmFqktDJZEtwFY7tEasptso4aAmqoEALw_wcB
+
+https://github.com/Ayushaj96/Ds-algos-codes/blob/master/BinaryTrees/VerticalOrderTraversal
 
 
