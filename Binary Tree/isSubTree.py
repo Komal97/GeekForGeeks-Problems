@@ -16,8 +16,8 @@ Output:
 
 Explanation:
 Testcase 1: Given trees are 
-T:                   1                                  S:                   3
-                   /      \                                                /
+T:                   1                                  S:                  3
+                   /    \                                                 /
                  2       3                                               4
                /    \    /   
              N    N  4
