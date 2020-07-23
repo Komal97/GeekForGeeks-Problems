@@ -11,17 +11,19 @@ https://practice.geeksforgeeks.org/problems/lru-cache/1      --------->    https
 Stack - easy
 https://practice.geeksforgeeks.org/problems/decode-the-string/0
 
-https://ide.codingblocks.com/s/282621
-
+Binary tree
 Leetcode
 https://www.youtube.com/watch?v=vssbwPkarPQ
 https://leetcode.com/problems/flatten-binary-tree-to-linked-list/discuss/443148/C%2B%2B-solution-with-few-lines(93-100)
 https://www.geeksforgeeks.org/morris-traversal-for-preorder/
 https://www.educative.io/edpresso/what-is-morris-traversal?affiliate_id=5082902844932096&utm_source=google&utm_medium=cpc&utm_campaign=platform2&utm_content=ad-1-dynamic&gclid=Cj0KCQjw6ar4BRDnARIsAITGzlDHIlGKhCXVXLkQjcogSZe9-YJvDYuQmFqktDJZEtwFY7tEasptso4aAmqoEALw_wcB
 
-BST 
+BST
 medium
-https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0                                          
+https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst/0
 
-is tree bst -> from other link (understand min, max concept)
+
+https://practice.geeksforgeeks.org/problems/find-a-pair-with-given-target-in-bst/1
+https://practice.geeksforgeeks.org/problems/pairs-violating-bst-property/1
+https://practice.geeksforgeeks.org/problems/median-of-bst/1
 kth smallest, largest using augmented tree structure
