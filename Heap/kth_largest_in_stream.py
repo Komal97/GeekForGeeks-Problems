@@ -25,7 +25,8 @@ for 6, the 4th largest element is 3 {3, 4, 5}
 
 from heapq import heappush, heappop
 
-# create min heap of size k and print top which is kth largest or min in heap
+# complexity - O(nlogK)
+# keep min heap of size k, push element and heapify, if size of heap > k then print top which is kth largest and pop
 def KthLargest(arr, n, k):
     
     heap = []
