@@ -21,6 +21,24 @@ Output:
 '''
 # use level order 
 # LEFT VIEW - first node of each level constitute left view
+
+def LeftView(root):
+    
+    maxlevel = -1
+    def left_view(root, level):
+        
+        nonlocal maxlevel
+        if root == None:
+            return
+        
+        if level > maxlevel:
+            print(root.data, end = " ")
+            maxlevel = level
+        left_view(root.left, level+1)
+        left_view(root.right, level+1)
+    
+    left_view(root, 0)
+        
 from collections import deque
 def LeftView(root):
     if root == None:
@@ -53,7 +71,25 @@ Right view of following tree is 1 3 7 8.
     \
      8
 '''    
-# RIGHT VIEW - last node of each level consitute right view              
+# RIGHT VIEW - last node of each level consitute right view     
+def rightView(root):
+    maxlevel = -1
+    
+    def right_view(root, level):
+        
+        nonlocal maxlevel
+        if root == None:
+            return
+        
+        if level > maxlevel:
+            print(root.data, end = " ")
+            maxlevel = level
+            
+        right_view(root.right, level+1)
+        right_view(root.left, level+1)
+    
+    right_view(root, 0)       
+    
 from collections import deque
 def rightView(root):
     if root == None:
