@@ -1,16 +1,44 @@
 linked list
 https://practice.geeksforgeeks.org/problems/lru-cache/1      --------->    https://ide.codingblocks.com/s/258491
 
+
 Stack - easy
 https://practice.geeksforgeeks.org/problems/decode-the-string/0
 
+
 Binary tree
 Leetcode
-https://www.youtube.com/watch?v=vssbwPkarPQ
-https://leetcode.com/problems/flatten-binary-tree-to-linked-list/discuss/443148/C%2B%2B-solution-with-few-lines(93-100)
-
-medium 
-https://practice.geeksforgeeks.org/problems/node-at-distance/1 - without extra space
+1) https://www.youtube.com/watch?v=vssbwPkarPQ
+   https://leetcode.com/problems/flatten-binary-tree-to-linked-list/discuss/443148/C%2B%2B-solution-with-few-lines(93-100)
+2) https://leetcode.com/problems/maximum-width-of-binary-tree/
 
 
-https://practice.geeksforgeeks.org/problems/linked-list-that-is-sorted-alternatingly/1
+GFG                     
+
+https://practice.geeksforgeeks.org/problems/nuts-and-bolts-problem/0                       - using quick sort
+https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum/0
+https://practice.geeksforgeeks.org/problems/smallest-positive-missing-number-1587115621/1
+https://practice.geeksforgeeks.org/problems/frequency-of-array-elements/0
+
+https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0
+https://practice.geeksforgeeks.org/problems/print-all-possible-strings/1
+
+https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
+https://www.geeksforgeeks.org/find-possible-words-phone-digits/
+
+https://practice.geeksforgeeks.org/problems/count-number-of-subtrees-having-given-sum/1
+
+ternary search, binary search 
+disjoint sets 
+
+39
+27 -13 46 -32 7 23 12 -5 -46 43 -25 -43 -15 -4 -45 -1 -45 -2 3 23 31 -11 -11 26 41 27 41 14 -20 -28 5 -42 10 1 -24 19 27 -10 -35
+8
+28 7 -36 21 -21 -50 9 -32
+39
+-25 38 24 -17 7 31 43 8 20 49 -33 -11 19 13 -28 44 23 -3 -19 12 32 40 42 41 7 -35 -29 7 24 41 -3 1 -19 -29 -13 -10 4 -20 48
+
+iterative of ll matrix
+time & space complexity ques
+heap time complexity

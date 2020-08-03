@@ -12,7 +12,6 @@ Output : false
 '''
 
 # method - 1, maintain hashmap, set for keeping track of already visited character -> space o(n)
-
 # method - 2, maintain a 32 bit number, where each bit represents each character -> valid for a-z characters only
 def uniquechar(exp):
 

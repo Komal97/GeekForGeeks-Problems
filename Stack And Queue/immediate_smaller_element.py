@@ -1,6 +1,7 @@
 '''
 https://www.geeksforgeeks.org/next-smaller-element/#:~:text=Elements%20for%20which%20no%20smaller,next%20smaller%20element%20as%20%2D1.
-Given an array, print the Next Smaller Element (NSE) for every element. The Smaller smaller Element for an element x is the first smaller element on the right side of x in array. Elements for which no smaller element exist (on right side), consider next smaller element as -1.
+Given an array, print the Next Smaller Element (NSE) for every element. The Smaller smaller Element for an element x is the first smaller element on the right side of x in array. 
+Elements for which no smaller element exist (on right side), consider next smaller element as -1.
 Input:
 2
 5

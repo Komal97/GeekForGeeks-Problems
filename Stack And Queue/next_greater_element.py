@@ -19,6 +19,7 @@ Output
 12 12 13 9 9 13 -1 8 11 -1 7 -1 6 -1
 '''
 
+# method - 1
 # since we have to find the element from right so instead of traversing from left to right, we start from right to left and keep right elements stored in stack
 # if small element is encounter on top, we pop it else we print top element(represents next largest) and push current element
 # if stack is empty means no element on right is greater so we print -1 
@@ -35,6 +36,19 @@ def nextLarger(arr, n):
         stack.append(arr[i])
     print(*ans[::-1], sep = " ")
 
+# method - 2
+# move from left to right, pop elements smaller than current element and current element become their ans and push current current element
+# maintain stack of indexes
+def nextLarger(arr, n):
+    stack = []
+    ans = [-1]*n
+    for i in range(n):
+        while len(stack)>0 and arr[stack[-1]] < arr[i]: # pop till stack top is smaller than current element
+            ans[stack[-1]] = arr[i]                     # current element become ans
+            stack.pop()
+        stack.append(i)                                 # push current element
+    print(*ans, sep = " ")
+    
 if __name__ == '__main__':
     t = int(input())
     while t:
