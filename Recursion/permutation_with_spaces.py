@@ -14,11 +14,11 @@ Output:
 
 # at every step we have 2 choices, either add character in output or space + character in output
 def permutation_with_spaces(s, output):
+    
     if len(s) == 0:
-        print('(', end = '')
-        print(output, end = '')
-        print(')', end = '')
+        print('(' + output + ')', end = '')
         return
+    
     permutation_with_spaces(s[1:], output + ' ' + s[0])
     permutation_with_spaces(s[1:], output + s[0])
 

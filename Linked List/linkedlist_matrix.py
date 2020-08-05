@@ -27,7 +27,7 @@ Output:
 1 2 3 4 5 6 7 8 9
 1 2 3 4
 '''
-# method - 2 (Recursive)
+# method - 1 (Recursive)
 # recursively call on down and right pointer of a node
 def build(arr, i, j, n):
     if i == n or j == n:
