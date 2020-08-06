@@ -21,6 +21,8 @@ Output:
 ! # $ % & * @ ^ ~
 '''
 
+# method - 1 => initialize map with given characters as key and value as freq
+# for maintaining order, keep arr with characters initialized in order
 def nuts_and_bolts(arr1, arr2, n):
     h = {'!': 0, '#': 0, '$': 0, '%': 0, '&': 0, '*': 0, '@': 0, '^': 0, '~': 0}
     arr = ['!', '#', '$', '%', '&', '*', '@', '^', '~']
@@ -40,11 +42,46 @@ def nuts_and_bolts(arr1, arr2, n):
             print(ch, end = ' ')
     print()
 
+# method - 2 -> using quick sort (because only algo which can pick element)
+# for partition nuts, take end from bolts as pivot
+# then partition bolt using pivot of nuts
+def partition(arr, s, e, pivot):
+    
+    i = s-1
+    j = s
+
+    while j<e:
+        if arr[j] < pivot:
+            i += 1
+            arr[j], arr[i] = arr[i], arr[j]
+        elif arr[j] == pivot:
+            arr[j], arr[e] = arr[e], arr[j]
+            j -= 1
+        j += 1
+    i += 1
+    arr[i], arr[e] = arr[e], arr[i]
+    return i
+
+def quicksort(nuts, bolts, s, e):
+
+    if s>=e:
+        return
+    
+    p = partition(nuts, s, e, bolts[e])
+    partition(bolts, s, e, nuts[p])
+    quicksort(nuts, bolts, s, p-1)
+    quicksort(nuts, bolts, p+1, e)
+
+def nuts_and_bolts(nuts, bolts, n):
+    quicksort(nuts, bolts, 0, n-1)
+    print(*nuts, sep = ' ')
+    print(*bolts, sep = ' ')
+    
 if __name__ == '__main__':
     t = int(input())
     while t:
         n = int(input())
-        arr1 = input().split()
-        arr2 = input().split()
-        nuts_and_bolts(arr1, arr2, n)
+        nuts = input().split()
+        bolts = input().split()
+        nuts_and_bolts(nuts, bolts, n)
         t -= 1

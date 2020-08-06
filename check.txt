@@ -15,16 +15,16 @@ https://practice.geeksforgeeks.org/problems/rat-maze-with-multiple-jumps/0
 https://practice.geeksforgeeks.org/problems/black-and-white/0                  - https://ide.codingblocks.com/s/302643
 
 GFG                     
-https://practice.geeksforgeeks.org/problems/nuts-and-bolts-problem/0           - using quick sort
-
-easy 
-https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum/0
-https://practice.geeksforgeeks.org/problems/deletion-in-a-binary-tree/1        - https://www.geeksforgeeks.org/deletion-binary-tree/
-
 medium
 https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0
-
 
 ternary search, binary search 
 disjoint sets 
 
+check 'for' and 'while' loop
+https://practice.geeksforgeeks.org/problems/nuts-and-bolts-problem/0          - https://ide.codingblocks.com/s/302766
+ 
+
+To discuss 
+https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum/0
+https://practice.geeksforgeeks.org/problems/deletion-in-a-binary-tree/1
