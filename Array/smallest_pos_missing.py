@@ -13,6 +13,9 @@ Output:
 2
 '''
 
+# use Index to keep check of smallest positive
+
+# Method - 1
 # move all -ve numbers to starting and remove them from array
 # then mark visited places as -ve. It number on any index is +ve means that +ve number is not found
 def segreggate(arr, n):
@@ -37,7 +40,27 @@ def missingNumber(arr,n):
         if arr[i] > 0:
             return i+1
     return n+1
+
+# Method - 2
+# ignore num <= 0 or > n
+# put val at arr[val] & save arr[val] as nextval and keep on doing this until val<0 or val>0 and arr[val]!=val
+def missingNumber(arr,n):
+       
+    for i in range(n):
+        if arr[i] <= 0 and arr[i] > n:
+            continue
+        val = arr[i]
+        
+        while val > 0 and  val < n and arr[val-1] != val:
+            nextval = arr[val-1]
+            arr[val-1] = val
+            val = nextval
     
+    for i in range(n):
+        if arr[i] != i+1:
+            return i+1
+    return n+1
+
 if __name__ == '__main__':
     t = int(input())
     while t:

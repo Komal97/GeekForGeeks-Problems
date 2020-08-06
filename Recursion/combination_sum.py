@@ -22,7 +22,9 @@ Output:
 (2, 2, 2, 2)(2, 2, 4)(2, 6)(4, 4)(8)
 '''
 
-# 
+# consider  j = i to n index from array and and call recursion on j
+# ex - consider i = 0 and recusion on 0 to n and find all possibilties until sum = target and return if sum > target 
+# then consider i = 1 and recursion on 1 to n and so on..
 def findCombination(arr, i, n, output, target, summ, ans):
     
     if summ > target:
@@ -32,7 +34,7 @@ def findCombination(arr, i, n, output, target, summ, ans):
         ans.add(output.strip())
         return
 
-    for j in range(i, n):                                     # receive index 0 and keep on calling index 0  until sum = target
+    for j in range(i, n):                         # keep calling on first index through j until base cond doesn't hit
         findCombination(arr, j, n, output + ' ' + str(arr[j]), target, summ+arr[j], ans)
         
 if __name__ == '__main__':
@@ -43,9 +45,8 @@ if __name__ == '__main__':
         target = int(input())
         arr.sort()
         ans = set()
-        
-        for i in range(n):                                      # send index 0 (i.e. element 2)
-            findCombination(arr, i, n, '', target, 0, ans)
+                                    
+        findCombination(arr, 0, n, '', target, 0, ans)      # send first index
             
         if len(ans):
             for a in sorted(ans):

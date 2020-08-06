@@ -4,36 +4,27 @@ https://practice.geeksforgeeks.org/problems/lru-cache/1      --------->    https
 Stack - easy
 https://practice.geeksforgeeks.org/problems/decode-the-string/0
 
-
 Binary tree
 Leetcode
 1) https://www.youtube.com/watch?v=vssbwPkarPQ
    https://leetcode.com/problems/flatten-binary-tree-to-linked-list/discuss/443148/C%2B%2B-solution-with-few-lines(93-100)
 2) https://leetcode.com/problems/maximum-width-of-binary-tree/
 
+Backtracking - Time complexity TBD
+https://practice.geeksforgeeks.org/problems/rat-maze-with-multiple-jumps/0
+https://practice.geeksforgeeks.org/problems/black-and-white/0                  - https://ide.codingblocks.com/s/302643
 
 GFG                     
-
-repeat with different method
-https://practice.geeksforgeeks.org/problems/frequency-of-array-elements/0
-https://practice.geeksforgeeks.org/problems/nuts-and-bolts-problem/0                       - using quick sort
+https://practice.geeksforgeeks.org/problems/nuts-and-bolts-problem/0           - using quick sort
 
 easy 
 https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum/0
-https://practice.geeksforgeeks.org/problems/deletion-in-a-binary-tree/1                   - https://www.geeksforgeeks.org/deletion-binary-tree/
+https://practice.geeksforgeeks.org/problems/deletion-in-a-binary-tree/1        - https://www.geeksforgeeks.org/deletion-binary-tree/
 
 medium
-https://practice.geeksforgeeks.org/problems/smallest-positive-missing-number-1587115621/1
-https://practice.geeksforgeeks.org/problems/smallest-positive-missing-number/0
-https://practice.geeksforgeeks.org/problems/find-missing-and-repeating/0
-https://practice.geeksforgeeks.org/problems/row-with-minimum-number-of-1s/0
-https://practice.geeksforgeeks.org/problems/count-number-of-subtrees-having-given-sum/1
+https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0
 
-Backtracking
-https://practice.geeksforgeeks.org/problems/rat-maze-with-multiple-jumps/0
-https://practice.geeksforgeeks.org/problems/black-and-white/0 s
 
 ternary search, binary search 
 disjoint sets 
-
 
