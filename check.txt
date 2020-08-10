@@ -1,19 +1,38 @@
 linked list
 https://practice.geeksforgeeks.org/problems/lru-cache/1      --------->    https://ide.codingblocks.com/s/258491
 
+
 Binary tree
 Leetcode
 1) https://www.youtube.com/watch?v=vssbwPkarPQ
    https://leetcode.com/problems/flatten-binary-tree-to-linked-list/discuss/443148/C%2B%2B-solution-with-few-lines(93-100)
 2) https://leetcode.com/problems/maximum-width-of-binary-tree/
 
+
 Backtracking - Time complexity (TBD)
 https://practice.geeksforgeeks.org/problems/rat-maze-with-multiple-jumps/0
-https://practice.geeksforgeeks.org/problems/black-and-white/0                  - https://ide.codingblocks.com/s/302643
+https://practice.geeksforgeekss.org/problems/black-and-white/0                  - https://ide.codingblocks.com/s/302643
 https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0
 
-check 'for' and 'while' loop
-https://practice.geeksforgeeks.org/problems/nuts-and-bolts-problem/0          - https://ide.codingblocks.com/s/302766
- 
+
 ternary search, binary search 
 disjoint sets
+
+
+https://practice.geeksforgeeks.org/problems/winner-of-an-election-where-votes-are-represented-as-candidate-names/0
+https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
+
+Recursive solution
+https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/climb-stairs-with-minimum-moves-official/ojquestion
+
+Dynamic programming
+medium
+https://practice.geeksforgeeks.org/problems/path-in-matrix/0
+
+easy 
+https://practice.geeksforgeeks.org/problems/gold-mine-problem/0
+https://practice.geeksforgeeks.org/problems/reach-a-given-score/0
+
+https://www.geeksforgeeks.org/number-of-ways-to-reach-nth-floor-by-taking-at-most-k-leaps/
+https://leetcode.com/problems/target-sum/
+

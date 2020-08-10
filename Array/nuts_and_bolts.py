@@ -50,7 +50,7 @@ def partition(arr, s, e, pivot):
     i = s-1
     j = s
 
-    while j<e:
+    while j<e:                                  # here for loop wont work because j-- will not change j value in loop for next iteration
         if arr[j] < pivot:
             i += 1
             arr[j], arr[i] = arr[i], arr[j]

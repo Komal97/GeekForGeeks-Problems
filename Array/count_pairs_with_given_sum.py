@@ -12,25 +12,23 @@ Output
 6
 '''
 
-# in first iter - create frequency map and in sec iter - find pairs
+# create a freq map
+# while adding in map, check x-num in h, if present then add h[x-num] into count and add current element in map
 def count_pair(arr, n, x):
     
     h = {}
     count = 0
+    
     for num in arr:
+        if x-num in h:
+            count += h[x-num]
+            
         if num in h:
             h[num] += 1
         else:
             h[num] = 1
-    
-    for num in arr:
-        if x-num in h:                  # if other element found then add other element frequency because it will pair with all
-            count += h[x-num]
-        
-        if x-num == num:                # if sum-num is itself, then count--  it exclude itself from count and make pair with other same element
-            count -= 1
-    return count//2                     # (x, y) and (y, x) are counted so they are counted twice
-    
+    return count
+
 if __name__ == '__main__':
     
     t = int(input())
