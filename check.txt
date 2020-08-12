@@ -17,14 +17,15 @@ https://practice.geeksforgeeks.org/problems/winner-of-an-election-where-votes-ar
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
 
 Dynamic programming
-IDE 
-https://www.geeksforgeeks.org/number-of-ways-to-reach-nth-floor-by-taking-at-most-k-leaps/
-
-easy 
-https://practice.geeksforgeeks.org/problems/reach-a-given-score/0
+medium
+https://practice.geeksforgeeks.org/problems/number-of-coins/0/
 
 Leetcode 
 https://leetcode.com/problems/target-sum/
+
+
+
+
 
 ternary search, binary search 
 disjoint sets
