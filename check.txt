@@ -16,16 +16,21 @@ Array
 https://practice.geeksforgeeks.org/problems/winner-of-an-election-where-votes-are-represented-as-candidate-names/0
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
 
+Greedy 
+medium 
+https://practice.geeksforgeeks.org/problems/count-possible-ways-to-construct-buildings/0
+https://practice.geeksforgeeks.org/problems/consecutive-1s-not-allowed/0
+
 Dynamic programming
 medium
 https://practice.geeksforgeeks.org/problems/number-of-coins/0/
+https://practice.geeksforgeeks.org/problems/count-palindrome-sub-strings-of-a-string/0
+https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication/0
 
 Leetcode 
 https://leetcode.com/problems/target-sum/
-
-
-
-
+https://leetcode.com/problems/coin-change/
+https://leetcode.com/problems/coin-change-2/
 
 ternary search, binary search 
 disjoint sets

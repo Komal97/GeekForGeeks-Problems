@@ -20,24 +20,24 @@ Testcase 1: We can use coin with value 2 three times, and coin with value 1 one 
 def coinChange(arr, i, n, summ, memo):
     
     if summ == 0:
-        return 1
-    if i == n and sum != 0:
-        return -1
+        return 0
     
-    var1 = float('inf')
+    if i == n and summ != 0:
+        return float('inf')
+    
+    if memo[i][summ] != -1:
+        return memo[i][summ]
+        
+    val1 = float('inf')
     if arr[i] <= summ:
-        var1 = coinChange(arr, i, n, summ-arr[i], memo)
-    var2 = coinChange(arr, i+1, n, summ, memo)
+        val1 = coinChange(arr, i, n, summ-arr[i], memo)
+        if val1 != float('inf'):
+            val1 += 1
     
-    #print(var1, var2)
+    val2 = coinChange(arr, i+1, n, summ, memo)
     
-    if var1 <= 0 and var2 <= 0:
-        return -1
-    elif var1 > 0 and var2 <= 0:
-        return var1 + 1
-    elif var1 <= 0 and var2 > 0:
-        return var2 + 1
-    return min(var1, var2) + 1
+    memo[i][summ] = min(val1, val2)
+    return memo[i][summ]
     
 if __name__ == '__main__':
     t = int(input())
@@ -45,5 +45,9 @@ if __name__ == '__main__':
         summ, n = list(map(int, input().split()))
         arr = list(map(int, input().split()))
         memo = [[-1]*(summ+1) for _ in range(n)]
-        print(coinChange(arr, 0, n, summ, memo))
+        ans = coinChange(arr, 0, n, summ, memo)
+        if ans == float('inf'):
+            print(-1)
+        else:
+            print(ans)
         t -= 1

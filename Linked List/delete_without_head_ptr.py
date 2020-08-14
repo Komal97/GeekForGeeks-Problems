@@ -16,12 +16,19 @@ Output:
 10 4 30
 '''
 
-# move next element to current position and move to next and delete last element 
+# method - 1 => move next element to current position and move to next and delete last element 
+# method - 2 => save next node, and move next node data to current and delete next saved node
 def deleteNode(curr_node):
-    #code here
-    prev = curr_node
-    while(curr_node != None and curr_node.next!=None):
-        prev = curr_node
-        curr_node.data = curr_node.next.data
-        curr_node = curr_node.next
-    prev.next = None
+    
+    # prev = curr_node
+    # while(curr_node != None and curr_node.next!=None):
+    #     prev = curr_node
+    #     curr_node.data = curr_node.next.data
+    #     curr_node = curr_node.next
+    # prev.next = None
+    
+    temp = curr_node.next
+    curr_node.data = curr_node.next.data
+    curr_node.next = temp.next
+    temp.next = None
+    temp = None
