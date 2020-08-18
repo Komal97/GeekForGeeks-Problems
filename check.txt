@@ -1,5 +1,5 @@
 linked list
-https://practice.geeksforgeeks.org/problems/lru-cache/1      --------->    https://ide.codingblocks.com/s/258491
+https://practice.geeksforgeeks.org/problems/lru-cache/1                        - https://ide.codingblocks.com/s/258491
 
 Binary tree
 Leetcode
@@ -13,24 +13,33 @@ https://practice.geeksforgeekss.org/problems/black-and-white/0                  
 https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0
 
 Array 
-https://practice.geeksforgeeks.org/problems/winner-of-an-election-where-votes-are-represented-as-candidate-names/0
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
 
-Greedy 
-medium 
-https://practice.geeksforgeeks.org/problems/count-possible-ways-to-construct-buildings/0
-https://practice.geeksforgeeks.org/problems/consecutive-1s-not-allowed/0
-
 Dynamic programming
+basic 
+https://practice.geeksforgeeks.org/problems/majority-element/0
+
+easy 
+https://practice.geeksforgeeks.org/problems/faulty-wiring-and-bulbs/0
+https://practice.geeksforgeeks.org/problems/friends-pairing-problem/0
+https://practice.geeksforgeeks.org/problems/cutted-segments/0
+https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence/0
+https://practice.geeksforgeeks.org/problems/non-repeating-element/0
+
 medium
-https://practice.geeksforgeeks.org/problems/number-of-coins/0/
-https://practice.geeksforgeeks.org/problems/count-palindrome-sub-strings-of-a-string/0
-https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication/0
+https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0
+https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle/0
 
 Leetcode 
 https://leetcode.com/problems/target-sum/
-https://leetcode.com/problems/coin-change/
-https://leetcode.com/problems/coin-change-2/
+https://leetcode.com/problems/coin-change/solution/                                 - 1D solution
+https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
+https://leetcode.com/problems/power-of-four/
+
+InterviewBit
+https://www.interviewbit.com/problems/palindrome-partitioning-ii/
+
 
 ternary search, binary search 
 disjoint sets
+
