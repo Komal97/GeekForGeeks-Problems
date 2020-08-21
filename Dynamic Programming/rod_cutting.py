@@ -32,12 +32,12 @@ def rodCutting(price, n):
     dp = [-1]*(n+1)
     dp[0] = 0
     
-    for cut in range(1, n+1):                               # denotes max cut (N)
+    for length in range(1, n+1):                               # denote len n
         maxval = 0  
-        for i in range(1, n+1):                             # denotes array price (price array) as well as cut (length array)
-            if i<=cut :
-                maxval = max(maxval, price[i-1] + dp[cut-i])
-        dp[cut] = maxval
+        for cut in range(1, n+1):                              # denotes cut from 1 to n 
+            if cut<=length :
+                maxval = max(maxval, price[cut-1] + dp[length-cut])
+        dp[length] = maxval
     
     return dp[n]
     

@@ -1,5 +1,5 @@
 linked list
-https://practice.geeksforgeeks.org/problems/lru-cache/1                        - https://ide.codingblocks.com/s/258491
+https://practice.geeksforgeeks.org/problems/lru-cache/1                      - https://ide.codingblocks.com/s/258491
 
 Binary tree
 Leetcode
@@ -9,37 +9,37 @@ Leetcode
 
 Backtracking - Time complexity (TBD)
 https://practice.geeksforgeeks.org/problems/rat-maze-with-multiple-jumps/0
-https://practice.geeksforgeekss.org/problems/black-and-white/0                  - https://ide.codingblocks.com/s/302643
+https://practice.geeksforgeekss.org/problems/black-and-white/0               - https://ide.codingblocks.com/s/302643
 https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0
 
 Array 
-https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
-
-Dynamic programming
 basic 
 https://practice.geeksforgeeks.org/problems/majority-element/0
+https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos/0
 
 easy 
 https://practice.geeksforgeeks.org/problems/faulty-wiring-and-bulbs/0
-https://practice.geeksforgeeks.org/problems/friends-pairing-problem/0
-https://practice.geeksforgeeks.org/problems/cutted-segments/0
-https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence/0
-https://practice.geeksforgeeks.org/problems/non-repeating-element/0
+https://practice.geeksforgeeks.org/problems/length-unsorted-subarray/0
+https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
+Reverse Pairs 
 
+medium 
+https://practice.geeksforgeeks.org/problems/overlapping-intervals/0
+
+Recursion
+https://practice.geeksforgeeks.org/problems/total-decoding-messages/0
+
+Dynamic programming
 medium
-https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0
-https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle/0
+https://practice.geeksforgeeks.org/problems/word-break/0
 
 Leetcode 
-https://leetcode.com/problems/target-sum/
 https://leetcode.com/problems/coin-change/solution/                                 - 1D solution
-https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
-https://leetcode.com/problems/power-of-four/
-
-InterviewBit
-https://www.interviewbit.com/problems/palindrome-partitioning-ii/
-
 
 ternary search, binary search 
 disjoint sets
 
+
+To discuss
+https://practice.geeksforgeeks.org/problems/number-of-open-doors/0
+https://practice.geeksforgeeks.org/problems/non-repeating-element/0
