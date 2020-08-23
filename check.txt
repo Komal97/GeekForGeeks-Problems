@@ -13,33 +13,22 @@ https://practice.geeksforgeekss.org/problems/black-and-white/0               - h
 https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0
 
 Array 
-basic 
-https://practice.geeksforgeeks.org/problems/majority-element/0
 https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos/0
-
-easy 
-https://practice.geeksforgeeks.org/problems/faulty-wiring-and-bulbs/0
-https://practice.geeksforgeeks.org/problems/length-unsorted-subarray/0
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
-Reverse Pairs 
+https://practice.geeksforgeeks.org/problems/next-greater-number-set-digits/0  - https://practice.geeksforgeeks.org/problems/next-permutation/0
+https://leetcode.com/problems/reverse-pairs/
 
-medium 
-https://practice.geeksforgeeks.org/problems/overlapping-intervals/0
+Dynamic Progamming
+https://leetcode.com/problems/word-break/
 
-Recursion
-https://practice.geeksforgeeks.org/problems/total-decoding-messages/0
+Graph 
+Easy 
+https://practice.geeksforgeeks.org/problems/print-adjacency-list/0
+https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1
 
-Dynamic programming
-medium
-https://practice.geeksforgeeks.org/problems/word-break/0
-
-Leetcode 
-https://leetcode.com/problems/coin-change/solution/                                 - 1D solution
+LL 
+join 5->null, 4->5, 3->4, 2->3, 1->2 (just next greater element)
+5 -> 3 -> 4 -> 2 -> 1
 
 ternary search, binary search 
 disjoint sets
-
-
-To discuss
-https://practice.geeksforgeeks.org/problems/number-of-open-doors/0
-https://practice.geeksforgeeks.org/problems/non-repeating-element/0
