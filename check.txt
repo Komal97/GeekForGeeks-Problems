@@ -14,17 +14,15 @@ https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0
 
 Array 
 easy 
-https://practice.geeksforgeeks.org/problems/finding-the-numbers/0 
 https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos/0
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
-https://practice.geeksforgeeks.org/problems/next-greater-number-set-digits/0  - https://practice.geeksforgeeks.org/problems/next-permutation/0
 https://leetcode.com/problems/reverse-pairs/
 
 Dynamic Progamming
 https://leetcode.com/problems/word-break/
 
 Graph 
-https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1
+https://practice.geeksforgeeks.org/problems/count-the-paths/0
 
 LL 
 join 5->null, 4->5, 3->4, 2->3, 1->2 (just next greater element)
