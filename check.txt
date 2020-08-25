@@ -21,6 +21,8 @@ https://leetcode.com/problems/reverse-pairs/
 Dynamic Progamming
 https://leetcode.com/problems/word-break/
 
+https://www.geeksforgeeks.org/check-if-a-directed-graph-is-connected-or-not/
+
 LL 
 join 5->null, 4->5, 3->4, 2->3, 1->2 (just next greater element)
 5 -> 3 -> 4 -> 2 -> 1
