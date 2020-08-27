@@ -1,6 +1,21 @@
 '''
 https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1
-Implement breadth first search traversal of graph
+Given a directed graph. The task is to do Breadth First Search of this graph.
+2
+5 4
+0 1 0 2 0 3 2 4
+3 2
+0 1 0 2
+
+Output:
+0 1 2 3 4    // BFS from node 0
+0 1 2
+
+Explanation:
+Testcase 1: 
+0 is connected to 1 , 2 , 3
+2 is connected to 4
+so starting from 0 , bfs will be 0 1 2 3 4.
 '''
 
 from collections import deque, defaultdict

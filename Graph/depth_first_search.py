@@ -1,7 +1,28 @@
 '''
 https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1
-Implememt depth first search traversal on graph.
+Given a connected undirected graph. Perform a Depth First Traversal of the graph.
+Note: Use recursive approach.
+Input:
+2
+5 4
+0 1 0 2 0 3 2 4
+4 3
+0 1 1 2 0 3
+
+Output:
+0 1 2 4 3   
+0 1 2 3
+
+Explanation:
+Testcase 1:
+0 is connected to 1 , 2 , 3
+1 is connected to 0
+2 is connected to 0 and 4
+3 is connected to 0
+4 is connected to 2
+so starting from 0 , dfs will be 0 1 2 4 3.
 '''
+
 from collections import deque, defaultdict
 class Graph:
     

@@ -12,19 +12,18 @@ Output:
 3
 '''
 
-from collections import defaultdict
-
-def dfs(src, dest, graph, visited, count):
+def dfs(src, dest, graph, visited):
     if src == dest:
-        count[0] += 1
-        return
+        return 1
     
+    count = 0
     visited[src] = True
     for neighbour in graph[src]:
         if not visited[neighbour]:
-            dfs(neighbour, dest, graph, visited, count)
+            count += dfs(neighbour, dest, graph, visited)
             
     visited[src] = False
+    return count
     
 def count_paths(v, e, arr, src, dest):
     
@@ -33,9 +32,8 @@ def count_paths(v, e, arr, src, dest):
     for i in range(0, 2*e, 2):
         graph[arr[i]].append(arr[i+1])
     
-    count = [0]
-    dfs(src, dest, graph, visited, count)
-    print(count[0])
+    count = dfs(src, dest, graph, visited)
+    print(count)
 
 if __name__ == '__main__':
     t = int(input())

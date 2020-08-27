@@ -17,11 +17,15 @@ easy
 https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos/0
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
 https://leetcode.com/problems/reverse-pairs/
+https://practice.geeksforgeeks.org/problems/container-with-most-water/0
 
 Dynamic Progamming
 https://leetcode.com/problems/word-break/
 
-https://www.geeksforgeeks.org/check-if-a-directed-graph-is-connected-or-not/
+Graph 
+https://practice.geeksforgeeks.org/problems/knight-walk/0
+https://practice.geeksforgeeks.org/problems/shortest-source-to-destination-path/0
+https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1
 
 LL 
 join 5->null, 4->5, 3->4, 2->3, 1->2 (just next greater element)
