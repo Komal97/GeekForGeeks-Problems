@@ -24,6 +24,29 @@ so starting from 0 , dfs will be 0 1 2 4 3.
 '''
 
 from collections import deque, defaultdict
+
+# iterative DFS - like iterative BFS - use stack instead of queue
+def dfs(g,N):
+    
+    ans = []
+    visited = defaultdict(bool)
+    stack = [0]
+    
+    while len(stack) > 0:
+        
+        node = stack.pop()
+        
+        if visited[node] :
+            continue
+        
+        ans.append(node)
+        visited[node] = True
+        for i in range(len(g[node])-1, -1, -1):
+            if not visited[g[node][i]]:
+                stack.append(g[node][i])
+    return ans
+
+# recursive DFS
 class Graph:
     
     def __init__(self):
@@ -68,3 +91,4 @@ g.add_edge(3,4)
 g.print_list()
 print()
 g.dfs()
+

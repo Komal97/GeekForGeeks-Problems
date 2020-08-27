@@ -23,6 +23,7 @@ Dynamic Progamming
 https://leetcode.com/problems/word-break/
 
 Graph 
+https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1
 https://practice.geeksforgeeks.org/problems/knight-walk/0
 https://practice.geeksforgeeks.org/problems/shortest-source-to-destination-path/0
 https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1
