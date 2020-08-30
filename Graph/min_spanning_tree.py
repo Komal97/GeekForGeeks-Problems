@@ -16,6 +16,7 @@ Example:
 Testcase 1:  Sum of weights of edges in the minimum spanning tree is 4.
 '''
 
+# PRIMS ALGORITHM => connect all node with min sum
 # Same as dijkstra, just save current weight in minheap instead of total
 from heapq import heappush, heappop
 def spanningTree(V, E, graph):

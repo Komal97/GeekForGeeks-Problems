@@ -13,7 +13,6 @@ https://practice.geeksforgeekss.org/problems/black-and-white/0               - h
 https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0
 
 Array 
-easy 
 https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos/0
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
 https://leetcode.com/problems/reverse-pairs/
@@ -23,9 +22,8 @@ Dynamic Progamming
 https://leetcode.com/problems/word-break/
 
 Graph 
-https://practice.geeksforgeeks.org/problems/knight-walk/0
-https://practice.geeksforgeeks.org/problems/shortest-source-to-destination-path/0
-https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1
+https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
+
 
 LL 
 join 5->null, 4->5, 3->4, 2->3, 1->2 (just next greater element)
@@ -33,3 +31,5 @@ join 5->null, 4->5, 3->4, 2->3, 1->2 (just next greater element)
 
 ternary search, binary search 
 disjoint sets
+
+

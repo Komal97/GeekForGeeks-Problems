@@ -19,16 +19,17 @@ Output:
 from heapq import heappush, heappop
 from collections import defaultdict
 
-# shortest distance with minimum weight
+# shortest distance with minimum weight between 2 nodes
 # same as BFS
 # use minheap instead of queue to maintain nodes with min distance
 # distance in heap = dist till current node + current dist
 from heapq import heappush, heappop
 def dijkstra(src, V, g):
+    
     visited = [False]*V
     heap = []
     heappush(heap, [0, src])
-    distance = [float('inf')]*V
+    distance = [0]*V
     
     while len(heap) > 0:
         dist, node = heap[0]
@@ -38,7 +39,7 @@ def dijkstra(src, V, g):
             continue
         visited[node] = True
      
-        distance[node] = min(distance[node], dist)
+        distance[node] = dist
         
         for i in range(V):
             if visited[i] == False and g[node][i] != 0:
