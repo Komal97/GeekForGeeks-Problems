@@ -1,5 +1,5 @@
 linked list
-https://practice.geeksforgeeks.org/problems/lru-cache/1                      - https://ide.codingblocks.com/s/258491
+https://practice.geeksforgeeks.org/problems/lru-cache/1                       - https://ide.codingblocks.com/s/258491
 
 Binary tree
 Leetcode
@@ -9,7 +9,7 @@ Leetcode
 
 Backtracking - Time complexity (TBD)
 https://practice.geeksforgeeks.org/problems/rat-maze-with-multiple-jumps/0
-https://practice.geeksforgeekss.org/problems/black-and-white/0               - https://ide.codingblocks.com/s/302643
+https://practice.geeksforgeekss.org/problems/black-and-white/0                - https://ide.codingblocks.com/s/302643
 https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0
 
 Array 
@@ -20,10 +20,11 @@ https://practice.geeksforgeeks.org/problems/container-with-most-water/0
 
 Dynamic Progamming
 https://leetcode.com/problems/word-break/
-
-Graph 
-https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
-
+https://practice.geeksforgeeks.org/problems/convert-to-strictly-increasing-array/0
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/#/description
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/#/description
+https://leetcode.com/problems/largest-time-for-given-digits/
 
 LL 
 join 5->null, 4->5, 3->4, 2->3, 1->2 (just next greater element)
@@ -31,5 +32,7 @@ join 5->null, 4->5, 3->4, 2->3, 1->2 (just next greater element)
 
 ternary search, binary search 
 disjoint sets
+
+
 
 
