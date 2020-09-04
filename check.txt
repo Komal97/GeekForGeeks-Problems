@@ -5,26 +5,29 @@ Binary tree
 Leetcode
 1) https://www.youtube.com/watch?v=vssbwPkarPQ
    https://leetcode.com/problems/flatten-binary-tree-to-linked-list/discuss/443148/C%2B%2B-solution-with-few-lines(93-100)
-2) https://leetcode.com/problems/maximum-width-of-binary-tree/
-
-Backtracking - Time complexity (TBD)
-https://practice.geeksforgeeks.org/problems/rat-maze-with-multiple-jumps/0
-https://practice.geeksforgeekss.org/problems/black-and-white/0                - https://ide.codingblocks.com/s/302643
-https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0
 
 Array 
 https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos/0
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
 https://leetcode.com/problems/reverse-pairs/
 https://practice.geeksforgeeks.org/problems/container-with-most-water/0
+https://practice.geeksforgeeks.org/problems/swapping-pairs-make-sum-equal/0
+
+String -> KMP 
 
 Dynamic Progamming
 https://leetcode.com/problems/word-break/
 https://practice.geeksforgeeks.org/problems/convert-to-strictly-increasing-array/0
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/#/description
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/#/description
+https://leetcode.com/problems/lexicographical-numbers/
+https://leetcode.com/problems/subsets/
+https://leetcode.com/problems/permutations/
+
+
 https://leetcode.com/problems/largest-time-for-given-digits/
+https://leetcode.com/problems/interleaving-string/
+https://practice.geeksforgeeks.org/problems/interleaved-strings/1
+
 
 LL 
 join 5->null, 4->5, 3->4, 2->3, 1->2 (just next greater element)
