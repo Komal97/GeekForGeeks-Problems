@@ -10,10 +10,6 @@ Array
 https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos/0
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
 https://leetcode.com/problems/reverse-pairs/
-https://practice.geeksforgeeks.org/problems/container-with-most-water/0
-https://practice.geeksforgeeks.org/problems/swapping-pairs-make-sum-equal/0
-
-String -> KMP 
 
 Dynamic Progamming
 https://leetcode.com/problems/word-break/
@@ -22,7 +18,6 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/#/description
 https://leetcode.com/problems/lexicographical-numbers/
 https://leetcode.com/problems/subsets/
 https://leetcode.com/problems/permutations/
-
 
 https://leetcode.com/problems/largest-time-for-given-digits/
 https://leetcode.com/problems/interleaving-string/

@@ -18,6 +18,7 @@ Output:
 4 2 2 1 8 7 6 5
 3 2 1 5 4
 '''
+
 # detach small ll with size of k, reverse it and attach it to new start pointer, this process continues
 def rev(head):
     if head == None or head.next == None:
