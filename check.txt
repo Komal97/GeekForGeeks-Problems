@@ -11,6 +11,9 @@ https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos/0
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
 https://leetcode.com/problems/reverse-pairs/
 
+https://practice.geeksforgeeks.org/problems/equilibrium-point/0
+https://practice.geeksforgeeks.org/problems/remove-all-duplicates-from-a-given-string/0
+
 Dynamic Progamming
 https://leetcode.com/problems/word-break/
 https://practice.geeksforgeeks.org/problems/convert-to-strictly-increasing-array/0
@@ -22,6 +25,7 @@ https://leetcode.com/problems/permutations/
 https://leetcode.com/problems/largest-time-for-given-digits/
 https://leetcode.com/problems/interleaving-string/
 https://practice.geeksforgeeks.org/problems/interleaved-strings/1
+https://leetcode.com/problems/counting-bits/
 
 
 LL 

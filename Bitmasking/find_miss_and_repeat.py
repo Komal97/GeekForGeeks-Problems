@@ -35,7 +35,40 @@ def findMissingrepeating(arr, n):
         if (arr[i]//maxel) == 0:
             miss = i+1
     print(repeat, miss)
+
+# method - 2
+# xor all element with other and with 1 to n
+# after that we get 2 unique numbers -> now use logic of unique number 2
+def findMissingrepeating(arr, n):
     
+    xxory = 0
+    for num in arr:
+        xxory ^= num
+    
+    for i in range(1, n+1):
+        xxory ^= i
+    
+    rsbm = (xxory&-xxory)
+    x = 0
+    y = 0
+    for num in arr:
+        if (num&rsbm)==0:
+            x ^= num
+        
+    for i in range(1, n+1):
+        if (i&rsbm)==0:
+            x ^= i
+    y = xxory^x
+    
+    for num in arr:
+        if num == x:
+            print(x, y)
+            break
+        elif num == y:
+            print(y, x)
+            break
+            
+            
 if __name__ == '__main__':
     t = int(input())
     while t:
