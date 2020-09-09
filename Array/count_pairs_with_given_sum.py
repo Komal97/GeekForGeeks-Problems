@@ -14,19 +14,17 @@ Output
 
 # create a freq map
 # while adding in map, check x-num in h, if present then add h[x-num] into count and add current element in map
+from collections import defaultdict
 def count_pair(arr, n, x):
     
-    h = {}
+    h = defaultdict(int)
     count = 0
     
     for num in arr:
         if x-num in h:
             count += h[x-num]
-            
-        if num in h:
-            h[num] += 1
-        else:
-            h[num] = 1
+        h[num] += 1
+
     return count
 
 if __name__ == '__main__':

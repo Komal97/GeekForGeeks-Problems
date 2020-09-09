@@ -50,14 +50,20 @@ def count_set_bits(n):
         count += dp[i]
 
     print(count)
+
+# method - 3 => time - O(log n)
+from math import log2
+def count_set_bits(n):
     
+    if n == 0 or n == 1:
+        return n
     
-if __name__ == '__main__':
-    t = int(input())
-    while t:
-        n = int(input())
-        count_set_bits(n)
-        t -= 1
+    x = int(log2(n))                                            # find max power 2
+    bitsupto2raisex = x*(1<<(x-1))          # 2^(x-1) * x       # find (2^x / 2)*x    
+    msbupto2raisexton = n - (1<<x) + 1      # n - 2^x + 1       # remaining = n -(2^x)+1
+    rest = n - (1<<x)
+    ans = bitsupto2raisex + msbupto2raisexton + count_set_bits(rest)
+    return ans
     
 if __name__ == '__main__':
     t = int(input())
