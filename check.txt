@@ -6,7 +6,6 @@ Leetcode
 1) https://www.youtube.com/watch?v=vssbwPkarPQ
    https://leetcode.com/problems/flatten-binary-tree-to-linked-list/discuss/443148/C%2B%2B-solution-with-few-lines(93-100)
 
-
 Array 
 https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos/0
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
@@ -14,8 +13,6 @@ https://leetcode.com/problems/reverse-pairs/
 
 Recursion & Backtracking
 https://leetcode.com/problems/lexicographical-numbers/
-https://leetcode.com/problems/subsets/
-https://leetcode.com/problems/permutations/
 
 Dynamic Progamming
 https://leetcode.com/problems/word-break/
@@ -24,11 +21,7 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/#/description
 
 Bitmasking
 https://www.geeksforgeeks.org/alphanumeric-abbreviations-of-a-string/
-https://leetcode.com/problems/smallest-sufficient-team/
-https://practice.geeksforgeeks.org/problems/find-sum-of-different-corresponding-bits-for-all-pairs/0
-
-https://leetcode.com/problems/reverse-bits/
-https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/
+Each number occuring thrice except one
 
 LL 
 join 5->null, 4->5, 3->4, 2->3, 1->2 (just next greater element)
@@ -37,3 +30,6 @@ join 5->null, 4->5, 3->4, 2->3, 1->2 (just next greater element)
 ternary search, binary search 
 disjoint sets
 
+
+https://www.interviewbit.com/problems/largest-rectangle-in-histogram/
+https://practice.geeksforgeeks.org/problems/bleak-numbers/0
