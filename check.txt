@@ -1,23 +1,20 @@
 linked list
 https://practice.geeksforgeeks.org/problems/lru-cache/1                       - https://ide.codingblocks.com/s/258491
 
+
 Binary tree
 Leetcode
 1) https://www.youtube.com/watch?v=vssbwPkarPQ
    https://leetcode.com/problems/flatten-binary-tree-to-linked-list/discuss/443148/C%2B%2B-solution-with-few-lines(93-100)
+
 
 Array 
 https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos/0
 https://practice.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k/0
 https://leetcode.com/problems/reverse-pairs/
 
-Recursion & Backtracking
-https://leetcode.com/problems/lexicographical-numbers/
-
 Dynamic Progamming
-https://leetcode.com/problems/word-break/
 https://practice.geeksforgeeks.org/problems/convert-to-strictly-increasing-array/0
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/#/description
 
 Bitmasking
 https://www.geeksforgeeks.org/alphanumeric-abbreviations-of-a-string/
@@ -31,5 +28,10 @@ ternary search, binary search
 disjoint sets
 
 
-https://www.interviewbit.com/problems/largest-rectangle-in-histogram/
-https://practice.geeksforgeeks.org/problems/bleak-numbers/0
+https://leetcode.com/problems/house-robber-iii/
+https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+https://practice.geeksforgeeks.org/problems/max-rectangle/1
+
+https://leetcode.com/problems/longest-valid-parentheses/
+
+https://www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/

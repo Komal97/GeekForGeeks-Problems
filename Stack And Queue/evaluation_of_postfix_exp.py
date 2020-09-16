@@ -20,7 +20,7 @@ def evaluation(a, b, op):
     elif op == '*':
         return a*b
     elif op == '/':
-        return a//b
+        return int(a/b)
         
 def postfix_eval(expression):
     
@@ -40,3 +40,4 @@ if __name__ == '__main__':
         expression = input()
         postfix_eval(expression)
         t-=1
+        

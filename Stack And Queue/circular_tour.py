@@ -43,7 +43,7 @@ def tour(lis, n):
             # if at any point start becomes 0 means we come to 0 again, means no route found
             if start == 0:
                 return -1
-        # if cur is poisitive means we can move forward and start incrementing 'end' pointer
+        # if cur is positive means we can move forward and start incrementing 'end' pointer
         cur += lis[end][0] - lis[end][1]
         end = (end+1)%n
         

@@ -19,29 +19,48 @@ Output:
 1
 0
 '''
+# recursion => check current prefix substring and check further is also present in dictionary
+def word_break(dictionary, string):
+    if string == '':
+        return 1
+    
+    for i in range(len(string)+1):
+        if string[:i] in dictionary:                            
+            if(word_break(dictionary, string[i:])):
+                return 1
+    return 0
 
-# create a dictionary of given
-# check presence of substring each time in dictionary, if found, start = end + 1 and end += 1
+# memoized
 from collections import Counter
-def word_break(dictionary, string, n):
+def wordBreakDp(string, wordDict, dp, idx):
     
+    if idx == len(string):                                      # if string is find completely in dictionary
+        return 1
+    
+    if dp[idx] != -1:                                           # dp[idx] stores starting index of string after which string is equal or not
+        return dp[idx]
+    
+    for i in range(idx, len(string)):
+        if string[idx:i+1] in wordDict:                         # if current to i is present in dict then check for i+1
+            dp[idx] = wordBreakDp(string, wordDict, dp, i+1)
+            if dp[idx] == 1:
+                return 1
+    
+    dp[idx] = 0
+    return dp[idx]
+    
+def word_break(dictionary, string):
+
     h = Counter(dictionary)
-    start = 0
-    end = 0
-    for i in range(len(string)):
-        if string[start: end+1] in h:
-            start = end+1
-            end = end+1
-        else:
-            end = end+1
-            
-    print(int(string[start:end+1] in h)) if start < len(string) else print(1)
-    
-if __name__ == '__main__':
-    t = int(input())
-    while t:
-        n = int(input())
-        dictionary = input().split()
-        string = input()
-        word_break(dictionary, string, n)
-        t -= 1
+    dp = [-1]*(len(string)+1)
+    ans = wordBreakDp(string, h, dp, 0)
+    return ans
+
+t = int(input())
+while t:
+    n = int(input())
+    dictionary = input().split()
+    string = input()
+    ans = word_break(dictionary, string)
+    print(ans)
+    t -= 1
