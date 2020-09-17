@@ -32,6 +32,11 @@ https://leetcode.com/problems/house-robber-iii/
 https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 https://practice.geeksforgeeks.org/problems/max-rectangle/1
 
-https://leetcode.com/problems/longest-valid-parentheses/
+https://practice.geeksforgeeks.org/problems/find-number-of-times-a-string-occurs-as-a-subsequence/0
+https://leetcode.com/problems/special-positions-in-a-binary-matrix/
 
 https://www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/
+https://leetcode.com/problems/combination-sum-ii/
+https://leetcode.com/problems/word-break/
+
+where to use * and + in finding ways => 1) example number of BST 2) find total ways to reach nth floor 
