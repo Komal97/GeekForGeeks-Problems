@@ -57,7 +57,22 @@ def coinChange(arr, n, summ):
                 dp[i][j] = min(val1, val2)
             else:
                 dp[i][j] = dp[i-1][j]
-    return dp[n][summ] 
+    return dp[n][summ]
+
+# 1-D DP
+def coinChange(arr, n, summ):
+
+    dp = [float('inf')]*(summ+1)
+    
+    dp[0] = 0
+    
+    for i in range(n):
+        for j in range(arr[i], summ+1):
+            val = dp[j-arr[i]]
+            if val != float('inf'):                         # means if there is way to make change so add 1 coin to it
+                dp[j] = min(dp[j], val+1)
+            
+    return dp[summ] if dp[summ] != float('inf') else -1
 
 if __name__ == '__main__':
     t = int(input())

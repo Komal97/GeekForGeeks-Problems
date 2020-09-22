@@ -1,4 +1,5 @@
 '''
+https://practice.geeksforgeeks.org/problems/connect-nodes-at-same-level/1
 Given a binary tree, connect the nodes that are at same level. You'll be given an addition nextRight pointer for the same.
 Input:
 2
@@ -23,7 +24,7 @@ Testcase2: The connected tree is
                  40 ----> 60 ----------> NULL
 '''
 
-# use level order method
+# method - 1 => using level order
 # connect 'nextRight' pointer of each node to next node at same level
 from collections import deque
 def connect(root):
@@ -46,3 +47,29 @@ def connect(root):
                 q.append(node.left)
             if node.right:
                 q.append(node.right)
+                
+# method - 2 => preorder - set root first, root.left.next = root.right and root.right = root.next.left
+def connect(root):
+    
+    if root == None:
+        return
+    
+    root.next = None
+    def connectNext(root):
+        if root == None:
+            return
+    
+        if root.left:
+            root.left.next = root.right
+
+        if root.right:
+            if root.next:
+                root.right.next = root.next.left
+            else:
+                root.right.next = None
+
+        connectNext(root.left)
+        connectNext(root.right)
+        
+    connectNext(root)
+    return root
