@@ -45,13 +45,16 @@ def missingNumber(arr,n):
 # ignore num <= 0 or > n
 # put val at arr[val] & save arr[val] as nextval and keep on doing this until val<0 or val>0 and arr[val]!=val
 def missingNumber(arr,n):
-       
+    
+    if n == 0:
+        return 1
+    
     for i in range(n):
         if arr[i] <= 0 and arr[i] > n:
             continue
         val = arr[i]
         
-        while val > 0 and  val < n and arr[val-1] != val:
+        while val > 0 and  val <= n and arr[val-1] != val:
             nextval = arr[val-1]
             arr[val-1] = val
             val = nextval

@@ -54,27 +54,31 @@ def isPalindrome(head):
         b = b.next
     return 1
 
-# method -2 recursive -> check first and last node, and keep first node as by reference so that accesible throughout recursion and access last node acc to recursion
-'''
-bool check(Node **left, Node*right){
-    if(right == NULL){
-        return true;
-    }
+# method -2 recursive -> check first and last node, and keep first node as by reference 
+# so that accesible throughout recursion and access last node acc to recursion
+class Solution:
+    def __init__(self):
+        self.left = None
+        
+    def check(self, node):
+        
+        if node == None:
+            return True
+        
+        res = self.check(node.next)
+        if res == False:
+            return False
+        elif self.left.val != node.val:
+            return False
+        else:
+            self.left = self.left.next
+            return True
     
-    bool isp = check(left, right->next);
-    if(!isp){
-        return false;
-    }
-    
-    bool isp1 = ((*left)->data == right->data);
-    if(isp1){
-        (*left) = (*left)->next;
-    }
-    return isp1;
-}
-bool isPalindrome(Node *head)
-{
-    //Your code here
-    return check(&head, head);
-}	
-'''
+    def isPalindrome(self, head: ListNode) -> bool:
+        
+        if head == None or head.next == None:
+            return True
+        
+        self.left = head
+        
+        return self.check(head)

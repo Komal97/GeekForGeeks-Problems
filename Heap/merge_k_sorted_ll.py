@@ -28,18 +28,24 @@ from heapq import heappush, heappop
 # use setattr to override __lt__ (if node.data become eq then heap check for sec parameter which is node here so to compare 2 node)
 def mergeKLists(arr,N): # arr contain head of each ll
     
+    if N == 0:
+        return None
+        
     heap = []
     
     setattr(Node, "__lt__", lambda self, other: self.data <= other.data)    # set and override __lt__func
     
-    for i in range(N):
-        heappush(heap, (arr[i].data, arr[i]))
+    for i in range(N): 
+        if arr[i]:
+            heappush(heap, (arr[i].data, arr[i]))
  
-    root = heap[0][1]
+    root = None
     tail = None
     
     while len(heap) > 0:
         
+        if head == None:
+            root = heap[0][1]
         if tail == None:
             tail = heap[0][1]
         else:
