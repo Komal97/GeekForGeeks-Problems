@@ -30,17 +30,18 @@ def length(head):
     return count
     
 def addBoth(l1,l2):
+    if not l1:
+        return l2
+    elif not l2:
+        return l1 
+    
     temp = l1 if length(l1)>length(l2) else l2
     head = temp
     carry = 0
     while(l1 != None or l2 !=None):
-        temp.data = (l1.data if l1 else 0) + (l2.data if l2 else 0) + carry
-        if temp.data > 9:
-            carry = temp.data//10
-            temp.data = temp.data%10
-        else:
-            carry = 0
-        
+        num = (l1.data if l1 else 0) + (l2.data if l2 else 0) + carry
+        temp.data = num%10
+        carry = num//10
         if l1: l1 = l1.next
         if l2: l2 = l2.next
         prev = temp
