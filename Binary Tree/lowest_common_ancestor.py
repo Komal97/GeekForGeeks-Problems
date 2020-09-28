@@ -65,3 +65,22 @@ def lca(root, n1, n2):
     if i<len(path1)-1: i += 1
     if j<len(path2)-1: j += 1
     return path1[i]
+
+# recursive
+# node having one on left side, other on right side, then node itself is lca
+# otherwise whichever side we found lca, return that as it is
+def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') :
+        
+        if root == None:
+            return None
+        
+        if root == p or root == q:
+            return root
+        
+        l = self.lowestCommonAncestor(root.left, p, q)
+        r = self.lowestCommonAncestor(root.right, p, q)
+        
+        if l and r:
+            return root
+        
+        return l if l else r

@@ -19,7 +19,7 @@ Explanation:
 Testcase 1: Since, 12, 10, 5 and 2 are the elements which have greater elements on their next node. 
 So, after deleting them, the linked list would like be 15, 11, 6, 3.
 '''
-# reverse list, maintain mex and delete values less than max and again reverse
+# reverse list, maintain max and delete values less than max and again reverse
 # idea is to delete all elements before current element which is small
 def reverse(head):
     if head == None or head.next == None:

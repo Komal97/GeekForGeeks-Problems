@@ -49,3 +49,35 @@ def isSymmetric(root):
     if root == None:
         return True
     return areMirror(root.left, root.right)
+
+# iterative
+def checkSymmetric(root1, root2):
+        
+    if root1 == None and root2 == None:
+        return True
+    elif root1 == None or root2 == None:
+        return False
+
+    stack1 = [root1]
+    stack2 = [root2]
+
+    while len(stack1) and len(stack2):
+        node1 = stack1.pop()
+        node2 = stack2.pop()
+        
+        if node1 == None and node2 == None:
+            continue
+        if node1 == None or node2 == None:
+            return False
+        if node1.val != node2.val:
+            return False
+        stack1.append(node1.left)
+        stack2.append(node2.right)
+        stack1.append(node1.right)
+        stack2.append(node2.left)
+    return True
+
+def isSymmetric(root: TreeNode):
+    if root == None:
+        return True
+    return checkSymmetric(root.left, root.right)
