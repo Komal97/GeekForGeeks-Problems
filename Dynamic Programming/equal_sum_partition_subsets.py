@@ -35,6 +35,22 @@ def equalPartition(arr, n, summ):
                 dp[i][j] = dp[i-1][j]
                 
     return dp[n][summ]
+
+# using 1-D
+def equalPartition(arr, n, summ):
+    
+    dp = [False]*(summ+1) 
+    
+    dp[0] = True
+    
+    for i in range(n):
+        # we need previous row value, that is why we started opposite
+        # because for 4 if we need 2 as prv value, we can obtain it by running loop opposite 
+        # if we run loop from starting, then for 4 , value of 2 becomes of current row, not of previous row 
+        for j in range(summ, arr[i]-1, -1):     
+            dp[j] = dp[j] or dp[j-arr[i]]
+                
+    return dp[summ]
     
 if __name__ == '__main__':
     t = int(input())
