@@ -47,7 +47,7 @@ def getMin(n, arr):
 class stack:
     def __init__(self):
         self.s=[]
-        self.minEle=None
+        self.minEle=float('inf')
 
     def push(self,x):
         # if stack is empty, push first element and set it as min elemnet also
@@ -59,7 +59,7 @@ class stack:
             self.s.append(x)
         # if x <= min element, push element and change min element 
         else:
-            y = 2*x - self.minEle
+            y = x + x - self.minEle
             self.s.append(y)
             self.minEle = x
 
@@ -73,9 +73,9 @@ class stack:
         else:
             x = self.minEle
             y = self.s.pop()
-            # after popping stcak become empty, so change min element too
+            # after popping stack become empty, so change min element too
             if len(self.s) == 0:
-                self.minEle = None
+                self.minEle = float('inf')
             else:
                 self.minEle = 2*self.minEle - y
             return x

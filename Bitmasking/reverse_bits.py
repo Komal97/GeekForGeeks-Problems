@@ -47,14 +47,6 @@ def reverse_bits(n):
     
     print(rev)
         
-    
-if __name__ == '__main__':
-    t = int(input())
-    while t:
-        n = int(input())
-        reverse_bits(n)
-        t -= 1
-        
 if __name__ == '__main__':
     t = int(input())
     while t:
