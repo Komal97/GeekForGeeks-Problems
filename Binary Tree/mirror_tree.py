@@ -31,3 +31,20 @@ def mirror(root):
     root.left, root.right = root.right, root.left
     mirror(root.left)
     mirror(root.right)
+
+# swap left and right while popping from queue
+from collections import deque
+def mirror(root):
+   
+   q = deque([root])
+   
+   while len(q):
+      node = q.popleft()
+      node.left, node.right = node.right, node.left
+      if node.left:
+            q.append(node.left)
+      if node.right:
+            q.append(node.right)
+            
+            
+   return root
