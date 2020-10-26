@@ -34,7 +34,7 @@ Output 2:
 '''
 
 # to maintain preorder, use stack & for level order, use queue
-# for left child -> d-1, for right child -> d same as that of root
+# for left child -> d+1, for right child -> d same as that of root
 
 class Solution:
 

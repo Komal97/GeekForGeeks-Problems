@@ -56,3 +56,46 @@ def findDist(root,a,b):
     if j<len(path2)-1: j+= 1
     
     return i+j
+
+# find LCA using recursion
+# then return of depth of node 1 from lCA  + depth of node 2 from lCA
+def findLCA(node, A, B):
+    if node == None:
+        return None
+    
+    if node.data == A or node.data == B:
+        return node
+        
+    l = findLCA(node.left, A, B)
+    r = findLCA(node.right, A, B)
+    
+    if l and r:
+        return node
+    
+    return l if l else r
+
+def findLevel(node, d, level, searchnode):
+    if node == None:
+        return
+    
+    if node.data == searchnode:
+        d.append(level)
+        return 
+    
+    findLevel(node.left, d, level+1, searchnode)
+    findLevel(node.right, d, level+1, searchnode)
+    
+def findDist(root,a,b):
+    
+    lca = findLCA(root, a, b)
+    
+    d1 = []
+    d2 = []
+    
+    findLevel(lca, d1, 0, a)
+    findLevel(lca, d2, 0, b)
+
+    if len(d1) > 0 and len(d2) > 0:
+        return d1[0] + d2[0]
+    
+    return -1
