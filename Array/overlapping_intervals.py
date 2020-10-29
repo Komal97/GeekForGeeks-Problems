@@ -67,16 +67,3 @@ if __name__ == '__main__':
         remove_overlapping(l, n)
         print()
         t -= 1
-        
-if __name__ == '__main__':
-    t = int(input())
-    while t:
-        n = int(input())
-        arr = list(map(int, input().split()))
-        l = []
-        for i in range(0, 2*n, 2):
-            x, y = arr[i], arr[i+1]
-            l.append([x, y])
-        remove_overlapping(l, n)
-        print()
-        t -= 1

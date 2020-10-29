@@ -37,6 +37,7 @@ def insert(root, Key):
         root = Node(Key)
         return root
     
+    # move 
     temp = root
     while temp.left != None or temp.right != None:
         if temp.data > Key and temp.left:
@@ -45,6 +46,8 @@ def insert(root, Key):
             temp = temp.right
         else:
             break
+        
+    # insert
     if temp.data > Key:
         temp.left = Node(Key)
     elif temp.data < Key:
