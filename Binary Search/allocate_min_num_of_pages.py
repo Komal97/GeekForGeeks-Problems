@@ -1,7 +1,8 @@
 '''
 https://practice.geeksforgeeks.org/problems/allocate-minimum-number-of-pages/0
 You are given N number of books. Every ith book has Pi number of pages. 
-You have to allocate books to M number of students. There can be many ways or permutations to do so. In each permutation one of the M students will be allocated the maximum number of pages. Out of all these permutations, the task is to find that particular permutation in which the maximum number of pages allocated to a student is minimum of those in all the other permutations, and print this minimum value. 
+You have to allocate books to M number of students. There can be many ways or permutations to do so. In each permutation one of the M students will be allocated the maximum number of pages. 
+Out of all these permutations, the task is to find that particular permutation in which the maximum number of pages allocated to a student is minimum of those in all the other permutations, and print this minimum value. 
 Each book will be allocated to exactly one student. Each student has to be allocated atleast one book.
 Note: Return -1 if a valid assignment is not possible, and allotment should be in contiguous order (see explanation for better understanding).
 Input:

@@ -24,7 +24,7 @@ Output:
 # so we call binary search on both sides and return our index accordingly
 def binary_search(arr, s, e, key):
     
-    while s>=0 and e<n and s<=e:
+    while s<=e:
         mid = (s+e)//2
         if arr[mid] == key:
             return mid
