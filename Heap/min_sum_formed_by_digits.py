@@ -44,3 +44,30 @@ if __name__ == '__main__':
         arr = list(map(int, input().split()))
         minSum(arr, n)
         t -= 1
+        
+# use count sort since number is from 0 to 9 only - O(n)
+from collections import defaultdict
+def solve(arr, n):
+    
+    count = defaultdict(int)
+    for num in arr:
+        count[num] += 1
+    
+    j = 0
+    for i in range(10):
+        if i in count:
+            while count[i] > 0:
+                arr[j] = i
+                j += 1
+                count[i] -= 1
+    
+    num1 = 0
+    num2 = 0
+
+    for i in range(n):
+        if i&1:
+            num1 = num1*10 + arr[i]
+        else:
+            num2 = num2*10 + arr[i]
+
+    return num1 + num2

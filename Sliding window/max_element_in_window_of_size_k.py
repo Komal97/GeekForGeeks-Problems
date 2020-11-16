@@ -12,6 +12,7 @@ Output:
 3 3 4 5 5 5 6
 10 10 10 15 15 90 90
 '''
+# space - O(n) + stack space
 # find next greater element at each index
 def nextGreaterElement(arr, n):
     stack = []
@@ -40,11 +41,38 @@ def find_max_in_window(arr, n, k):
             j = nge[j]
         print(arr[j], end = " ")
     
-if __name__ == '__main__':
-    t = int(input())
-    while t:
-        n, k = list(map(int, input().split()))
-        arr = list(map(int, input().split()))
-        find_max_in_window(arr, n, k)
-        print()
-        t -= 1
+# method - 2 - O(k) space
+from collections import deque
+class Solution:
+    def maxSlidingWindow(self, nums: List[int], k: int):
+        
+        if not nums:
+            return []
+        
+        deq = deque()
+        n = len(nums)
+        ans = []
+        
+        for i in range(k):
+            # pop smaller element from last as current element is greater for current window 
+            # if current < last element means it is not max in current window but can be max in future windows
+            while len(deq) > 0 and nums[i] > nums[deq[-1]]:
+                deq.pop()
+            deq.append(i)
+        
+        for i in range(k, n):
+            ans.append(nums[deq[0]])
+            
+            # pop out of window elements
+            while len(deq) > 0 and deq[0] <= i-k:
+                deq.popleft()
+            
+            # pop smaller element from last as current element is greater for current window 
+            # if current < last element means it is not max in current window but can be max in future windows
+            while len(deq) > 0 and nums[i] >= nums[deq[-1]]:
+                deq.pop()
+             
+            deq.append(i)
+        
+        ans.append(nums[deq[0]])
+        return ans

@@ -37,3 +37,26 @@ def LCA(root, n1, n2):
     if n1>root.data and n2>root.data:
         return LCA(root.right, n1, n2)
     return root
+
+# iterative - O(1) space
+# if left and right condition doesnt satisfy
+# means current node is lca, no need to traceback
+def LCA(root, n1, n2):
+    
+    if root == None:
+            return None
+
+    node = root
+    qval = n1
+    pval = n2
+    
+    while node:
+        parent = node.val
+        if parent > pval and parent > qval:
+            node = node.left
+        elif parent < pval and parent < qval:
+            node = node.right
+        else:
+            return node
+    
+    return None

@@ -44,30 +44,57 @@ class Solution:
         return (findElement(k) + findElement(k+1))/2
 
 # method - 2 - using binary search - O(32 * row * log(col))
+# max range - 1 to 2^32 and from this we can divide our range into half max 32 times.
 from bisect import bisect_right
 class Solution:
    
     def findMedian(self, A):
+        
+        def count_elements(arr, key):
+            s = 0
+            e = c-1
+            ans = c
+            
+            while s <= e:
+                mid = s + (e-s)//2
+                if arr[mid] == key:
+                    ans = mid + 1
+                    s = mid + 1
+                elif arr[mid] > key:
+                    ans = mid
+                    e = mid - 1
+                else:
+                    s = mid + 1
+            return ans
         
         n, m = len(A), len(A[0])
         
         mi = A[0][0]
         mx = 0
         
+        # find min from first col and max from last col
         for i in range(n):
             mi = min(mi, A[i][0]) 
             mx = max(mx, A[i][m-1])
         
+        # find total elements
         total = (n*m+1)//2
+        
         while mi < mx:
             mid = mi + (mx - mi)//2
             place = 0
             
+            # count elements in each row less than or equal to mid
             for i in range(n):
-                j = bisect_right(A[i], mid)
+                j =  count_elements(A[i], mid)  
+                #j = bisect_right(A[i], mid)
                 place += j
+            
+            # count is less than desired means our ans lie in second half
             if place < total:
                 mi = mid + 1
+            
+            # else current can be ans or less than current
             else:
                 mx = mid
         return mi

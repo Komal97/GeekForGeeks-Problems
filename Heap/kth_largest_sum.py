@@ -17,25 +17,17 @@ Explanation: The 6th largest sum among sum of all contiguous subarrays is -10.
 '''
 
 # we cannot store summ of all subarrays as number of subarrays can be large which cannot fit in memory
-# so we use precomputation, summ(i, j) = summ[j] - summ[i-1]
+# so use variable sum += arr[j] where i <= j < n
 # use heap to find kth largest sum
 # O(n^2 log k)
 from heapq import heappush, heapreplace
 def kth_largest_sum(arr, n, k):
-    
-    pre_compute = [0]*n
-    pre_compute[0] = arr[0]
-    for i in range(1, n):
-        pre_compute[i] = pre_compute[i-1] + arr[i]
-        
+ 
     heap = []
-    print(pre_compute)
     for i in range(n):
+        summ = 0
         for j in range(i, n):
-            if i > 0:
-                summ = pre_compute[j] - pre_compute[i-1]
-            else:
-                summ = pre_compute[j]
+            summ += arr[j]
             if len(heap) < k:
                 heappush(heap, summ)
             elif heap[0] < summ:
@@ -43,6 +35,7 @@ def kth_largest_sum(arr, n, k):
     
     print(heap[0])
 
-arr = [20, -5, -1]
-k = 3
+arr = [10, -10, 20, -40]
+k = 6
+
 kth_largest_sum(arr, len(arr), k)

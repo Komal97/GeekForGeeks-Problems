@@ -69,18 +69,47 @@ def lca(root, n1, n2):
 # recursive
 # node having one on left side, other on right side, then node itself is lca
 # otherwise whichever side we found lca, return that as it is
-def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') :
+# case - if one node is present, find lca and search for both nodes keeping root as lca node
+class Solution:
+
+    def lca(self, A: 'TreeNode', B: int, C: int) :
         
-        if root == None:
-            return None
+        flagB = False
+        flagC = False
         
-        if root == p or root == q:
-            return root
+        def findlca(root):
+            
+            nonlocal flagB
+            nonlocal flagC
+            if root == None:
+                return None
+            
+            if root.val == B:
+                flagB = True
+                return root
+                
+            if root.val == C:
+                flagC = True
+                return root
+                
+            l = findlca(root.left)
+            r = findlca(root.right)
+            if l and r:
+                return root
+            return l if l else r
         
-        l = self.lowestCommonAncestor(root.left, p, q)
-        r = self.lowestCommonAncestor(root.right, p, q)
+        def search(root, key):
+            if root == None:
+                return False
+            
+            if root.val == key:
+                return True
+            
+            return search(root.left, key) or search(root.right, key)
         
-        if l and r:
-            return root
         
-        return l if l else r
+        lca = findlca(A)
+        if (flagB and flagC) or (flagB and search(lca, C)) or (flagC and search(lca, B)):
+            return lca.val
+        return -1
+        
