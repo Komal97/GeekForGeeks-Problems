@@ -12,7 +12,6 @@ Input:
 Output:
 12
 9
-
 '''
 
 def rightSmallElement(arr, n):
@@ -65,3 +64,39 @@ if __name__ == '__main__':
         arr = list(map(int, input().split()))
         print(maxHistogramArea(arr, n))
         t -= 1
+        
+# method - 2 - One pass
+def maxHistogramArea(heights, n):
+    
+    if n == 0:
+        return 0
+    elif n == 1:
+        return heights[0]
+    
+    # consider current element as next right smaller
+    # stack top is bar
+    # after popping bar, stack top index is next left smaller of popped bar
+    stack = []
+    maxarea = 0
+    i = 0
+    while i < n:
+        if len(stack) == 0 or heights[stack[-1]] <= heights[i]:
+            stack.append(i)
+            i += 1
+        else:
+            top = stack.pop()
+            if len(stack) == 0:
+                area = heights[top] * i
+            else:
+                area = heights[top] * (i - stack[-1] - 1)
+            maxarea = max(maxarea, area)
+    
+    while len(stack):
+        top = stack.pop()
+        if len(stack) == 0:
+            area = heights[top] * i
+        else:
+            area = heights[top] * (i - stack[-1] - 1)
+        maxarea = max(maxarea, area)
+        
+    return maxarea
