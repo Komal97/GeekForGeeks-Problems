@@ -4,14 +4,21 @@ Given an array of integers where each element represents the max number of steps
 The task is to find the minimum number of jumps to reach the end of the array (starting from the first element). 
 If an element is 0, then cannot move through that element.
 Input:
-2
+4
 11
 1 3 5 8 9 2 6 7 6 8 9
 6
 1 4 3 2 6 7
+4
+2 3 0 1
+4 
+0 1 1 1
+
 Output:
 3
 2
+-1
+-1
 
 Explanation:
 Testcase 1: 
@@ -49,6 +56,8 @@ def minJumps(arr, n):
     
     print(dp[0]) 
     
+    
+    
 if __name__ == '__main__':
     t = int(input())
     while t:
@@ -56,3 +65,44 @@ if __name__ == '__main__':
         arr = list(map(int, input().split()))
         minJumps(arr, n)
         t -= 1
+
+# O(n) time, O(1) space
+def jump(nums: List[int]):
+        
+    if len(nums) <= 1:
+        return 0
+        
+    if(nums[0]) == 0:
+        return -1
+    
+    # maintain maximum reachable index from current position
+    # maintain maximum possible from current position because if we take maximum steps in 1 jump then total jumps are minimized
+    # and total jumps
+    maxReachableIndex, possibleSteps, jumps, n = nums[0], nums[0], 1, len(nums)
+    
+    for i in range(1, n):
+        
+        if i == n-1:
+            return jumps
+        
+        # maintain maximum reachable index each time
+        maxReachableIndex = max(maxReachableIndex, i + nums[i])
+        
+        # we use a step to get to the current index 
+        possibleSteps -= 1
+        
+        # if steps finish means maximum steps covered in current jump 
+        if possibleSteps == 0:
+            
+            # if both are equal means we get 0 that is why max reachable index is not changed 
+            # there is no way to move further
+            if i >= maxReachableIndex:
+                return -1
+        
+            # update steps for next round
+            possibleSteps = maxReachableIndex - i
+            
+            # update jump
+            jumps += 1
+    
+    return -1

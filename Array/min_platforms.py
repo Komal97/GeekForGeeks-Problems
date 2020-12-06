@@ -21,7 +21,7 @@ Output:
 def find_min_platforms(arrival, depart, n):
       
     arrival.sort()
-    depart.sort()M
+    depart.sort()
     
     maxplatforms = 1
     platforms = 1

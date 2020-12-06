@@ -1,4 +1,5 @@
 '''
+https://www.geeksforgeeks.org/gold-mine-problem/
 Given a gold mine (M) of n*m dimensions. Each field in this mine contains a positive integer which is the amount of gold in tons. 
 Initially the miner is at first column but can be at any row. He can move only (right->,right up /,right down\) that is from a given cell, the miner can move to the cell diagonally up towards the right or right or diagonally down towards the right. 
 Your task is to find out maximum amount of gold which he can collect.
