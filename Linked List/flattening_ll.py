@@ -37,4 +37,6 @@ def flatten(root):
     #Your code here
     if root == None or root.next == None:
         return root
-    return merge(root, flatten(root.next))
+    
+    merged_head = flatten(root.next)
+    return merge(root, merged_head)

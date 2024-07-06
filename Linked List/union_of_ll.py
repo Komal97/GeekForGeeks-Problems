@@ -1,7 +1,7 @@
 '''
 https://practice.geeksforgeeks.org/problems/union-of-two-linked-list/1
-Given two linked lists, your task is to complete the function makeUnion(), that returns the union of two linked lists. 
-This union should include all the distinct elements only.
+Given two linked lists, your task is to complete the function makeUnion(), that returns the union list of two linked lists. 
+This union list should include all the distinct elements only and it should be sorted in ascending order.
 Expected Auxilliary Space : O(1)
 
 Example:
