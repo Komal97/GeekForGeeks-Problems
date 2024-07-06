@@ -30,39 +30,36 @@ def addPolynomial(poly1, poly2):
 			self.next = None
 			self.power = pwr
 	'''
-    polysum_h = None
-    polysum_t = None
-    while(poly1 != None and poly2 != None):
-        if poly1.power == poly2.power:
-            if polysum_h == None:
-                polysum_h = node(poly1.coef + poly2.coef, poly2.power)
-                polysum_t = polysum_h
-            else:
-                n = node(poly1.coef + poly2.coef, poly2.power)
-                polysum_t.next = n
-                polysum_t = polysum_t.next
+    head = None
+    tail = None
+    
+    while poly1 and poly2:
+        coef = 0
+        power = 0
+        if poly1.power > poly2.power:
+            coef = poly1.coef
+            power = poly1.power
             poly1 = poly1.next
-            poly2 = poly2.next
         elif poly1.power < poly2.power:
-            if polysum_h == None:
-                polysum_h = node(poly2.coef, poly2.power)
-                polysum_t = polysum_h
-            else:
-                n = node(poly2.coef, poly2.power)
-                polysum_t.next = n
-                polysum_t = polysum_t.next
+            coef = poly2.coef
+            power = poly2.power
             poly2 = poly2.next
         else:
-            if polysum_h == None:
-                polysum_h = node(poly1.coef, poly1.power)
-                polysum_t = polysum_h
-            else:
-                n = node(poly1.coef, poly1.power)
-                polysum_t.next = n
-                polysum_t = polysum_t.next
+            coef = poly1.coef + poly2.coef
+            power = poly1.power
             poly1 = poly1.next
+            poly2 = poly2.next
+        n = node(coef, power)
+        if not head:
+            head = n
+            tail = head
+        else:
+            tail.next = n
+            tail = tail.next
+    
     if poly1:
-        polysum_t.next = poly1
+        tail.next = poly1
     if poly2:
-        polysum_t.next = poly2
-    return polysum_h
+        tail.next = poly2
+        
+    return head
