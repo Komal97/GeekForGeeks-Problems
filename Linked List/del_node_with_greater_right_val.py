@@ -36,18 +36,15 @@ def reverse(head):
     return head
 def compute(head):
     head = reverse(head)
-    prev = Node(None)
     temp = head
-    max_val = temp.data
-    while(temp!=None):
-        if temp.data >= max_val:
-            prev = temp
-            max_val = temp.data
-            temp = temp.next
+    while temp and temp.next:
+        if temp.next.data < temp.data:
+            ptr = temp.next
+            temp.next = temp.next.next
+            ptr.next = None
+            ptr = None
         else:
-            prev.next = temp.next
-            temp = None
-            temp = prev.next
+            temp = temp.next
             
     head = reverse(head)
     return head
