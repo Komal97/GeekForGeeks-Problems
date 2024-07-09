@@ -39,8 +39,7 @@ class DoublyLinkedList:
             n.prev = self.tail
             self.tail = n
     
-    def delete(self, key):
-        node = self.hash[key]
+    def delete(self, node):
         if node.prev == None:
             self.head = node.next
             if self.head:
@@ -51,8 +50,6 @@ class DoublyLinkedList:
             node.next.prev = node.prev    
         else:
             self.tail = node.prev
-        node = None
-        self.hash[key] = None
     
     def get(self):
         if self.head:
@@ -65,7 +62,8 @@ class DoublyLinkedList:
             self.hash[data] = self.tail
         else:
             if self.hash[data] != None:
-                self.delete(data)
+                self.delete(self.hash[data])
+                self.hash[data] = None
         return self.get()
 
     def printList(self):
