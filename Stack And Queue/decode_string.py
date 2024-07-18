@@ -45,9 +45,26 @@ def decode_string(string, n):
     
     print(stack[-1]) if len(stack) > 0 else ''
 
-if __name__ == '__main__':
-    t = int(input())
-    while t:
-        string = input()
-        decode_string(string, len(string))
-        t -= 1
+
+# using functions        
+class Solution:
+    def decodedString(self, s):
+        
+        stack = []
+        
+        for ch in s:
+            if len(stack) == 0 or ch != ']':  # if not closing bracket
+                if len(stack) > 0 and ch.isnumeric() and stack[-1].isnumeric(): # if current is number and prev is also number, then append in prev to create a full number
+                    stack[-1] += ch
+                else:
+                    stack.append(ch)   # else append 
+            else:
+                string = ''
+                while stack[-1] != '[':         # pop until opening bracket encounter
+                    top = stack.pop()
+                    string = top + string       # append characters
+                stack.pop()                     # pop opening bracket
+                num = stack.pop()               # pop number
+                stack.append(string * int(num)) # repeat string n times and push back
+        
+        return ''.join(stack)
