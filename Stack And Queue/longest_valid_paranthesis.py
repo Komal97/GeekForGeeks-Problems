@@ -54,12 +54,16 @@ def valid_substring(exp):
     stack = [-1]
     
     for i in range(n):
+        #If opening bracket, push index of it
         if exp[i] == '(':
             stack.append(i)
+        # If closing bracket, i.e.,str[i] = ')'
         else:
+            # If the stack is not empty and on the top is the index of a open bracket then pop
             stack.pop()
             if len(stack) > 0:
                 count = max(count, i-stack[-1])
+            # If stack is empty. push current index as base for next valid substring (if any)
             else:
                 stack.append(i)
     return count
