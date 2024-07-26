@@ -15,6 +15,24 @@ False
 There is no subset that add up to 30.
 '''
 
+# recursion 
+def subsets(arr, idx, summ, out):
+    if summ == 0:
+        print(out)
+        return
+    if idx == len(arr):
+        return
+    
+
+    val = arr[idx]
+    subsets(arr, idx+1, summ, out)
+    if summ - val >= 0:
+        subsets(arr, idx+1, summ - val, out + [val])
+
+
+arr = [10, 20, 30, 40, 50]
+subsets(arr, 0, 60, [])
+
 # variation of 0-1 knapsack
 # recursion + memoization
 def printIsSubsetPresent(arr, i, n, summ, dp):
