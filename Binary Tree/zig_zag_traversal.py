@@ -21,29 +21,28 @@ Hence the zigzag traversal will be 3 1 2.
 # if main stack become empty, means a level is complete, then make main stack = child stack and make child stack empty & level++
 def zigZagTraversal(root):
     
+    mainStack = [root]
+    childStack = []
+    
     ans = []
-    main_stack = []
-    child_stack = []
-    level = 1
-    
-    main_stack.append(root)
-    
-    while len(main_stack) > 0:
-        node = main_stack.pop()
-        ans.append(node.data)
-        # level is odd
-        if level&1:
-            if node.left:
-                child_stack.append(node.left)
-            if node.right:
-                child_stack.append(node.right)
-        else:
-            if node.right:
-                child_stack.append(node.right)
-            if node.left:
-                child_stack.append(node.left)
-        if len(main_stack) == 0:
-            main_stack = child_stack
-            child_stack = []
-            level += 1
+    leftToRight = True
+    while mainStack:
+        size = len(mainStack)
+        for i in range(size):
+            node = mainStack.pop()
+            ans.append(node.data)
+            if leftToRight:
+                if node.left:
+                    childStack.append(node.left)
+                if node.right:
+                    childStack.append(node.right)
+            else:
+                if node.right:
+                    childStack.append(node.right)
+                if node.left:
+                    childStack.append(node.left)
+            
+        leftToRight = not leftToRight
+        mainStack = childStack
+        childStack = []
     return ans
