@@ -20,7 +20,7 @@ T:                   1                                  S:                  3
                    /    \                                                 /
                  2       3                                               4
                /    \    /   
-             N    N  4
+             N       N  4
 S is the subtree in T.
 '''
 
