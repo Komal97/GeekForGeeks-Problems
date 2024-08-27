@@ -42,10 +42,7 @@ def getCountOfNode(root,l,h):
     if root == None:
         return 0
     
-    # special condition if l and h are same
-    if root.data == l and root.data == h:
-        return 1
-    
+   
     # if root lie in range then current node + no of nodes from left + no of node fron right tree
     if root.data >= l and root.data <= h:
         return 1 + getCountOfNode(root.left,l,h) + getCountOfNode(root.right,l,h)
@@ -54,5 +51,4 @@ def getCountOfNode(root,l,h):
     elif root.data < l:
         return getCountOfNode(root.right,l,h)
     # else check left tree
-    else:
-        return getCountOfNode(root.left,l,h)
+    return getCountOfNode(root.left,l,h)
