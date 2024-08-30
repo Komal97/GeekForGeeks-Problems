@@ -50,10 +50,11 @@ def missingNumber(arr,n):
         return 1
     
     for i in range(n):
-        if arr[i] <= 0 and arr[i] > n:
+        if arr[i] <= 0 or arr[i] > n:
             continue
         val = arr[i]
         
+        # keep val at its position which is index
         while val > 0 and  val <= n and arr[val-1] != val:
             nextval = arr[val-1]
             arr[val-1] = val

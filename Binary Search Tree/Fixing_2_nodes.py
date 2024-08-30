@@ -28,7 +28,7 @@ def correctBST(root):
     if root == None:
         return None
         
-    def findNodes(root, prev_node, first, second): cxdswq   
+    def findNodes(root, prev_node, first, second):   
         if root == None:
             return
         
