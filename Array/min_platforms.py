@@ -1,4 +1,5 @@
 '''
+https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1
 Given arrival and departure times of all trains that reach a railway station. Your task is to find the minimum number of platforms required for the railway station so that no train waits.
 Input:
 2
